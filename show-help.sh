@@ -17,19 +17,19 @@ osascript -e '
 tell application "System Events"
     display alert "AeroSpace Shortcuts" message "
 WORKSPACES (switch only; never launch apps)
-  alt + 1         Free
+  alt + 1         Ghostty / Neovim
   alt + 2         Chrome
   alt + 3         ChatGPT / Codex
-  alt + 4         Ghostty + Finder
+  alt + 4         Finder
   alt + 5         Discord
   alt + tab        Toggle last workspace
   alt + shift + #  Move unpinned window to workspace # (1-5)
 
 APP LAUNCHERS
   alt + ctrl + c    Calendar
-  alt + enter / t    Ghostty
+  alt + enter / t    Ghostty + tmux
   alt + b    Chrome
-  alt + n    Notion      alt + m    Mail
+  alt + n    New tmux + Neovim      alt + m    Mail
   alt + c    Codex   alt + d    Discord
 
 WINDOWS

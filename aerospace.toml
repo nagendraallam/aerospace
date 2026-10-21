@@ -40,7 +40,7 @@ gaps.outer.right =      5
 on-window-detected = [
     { if = 'test %{app-bundle-id} = com.apple.finder', run = ['layout tiling', 'move-node-to-workspace 4'] },
     { if = 'test %{app-bundle-id} = com.openai.codex', run = ['layout tiling', 'move-node-to-workspace 3'] },
-    { if = 'test %{app-bundle-id} = com.mitchellh.ghostty', run = ['layout tiling', 'move-node-to-workspace 4'] },
+    { if = 'test %{app-bundle-id} = com.mitchellh.ghostty', run = ['layout tiling', 'move-node-to-workspace 1'] },
     { if = 'test %{app-bundle-id} = com.google.Chrome', run = ['layout tiling', 'move-node-to-workspace 2'] },
     { if = 'test %{app-bundle-id} = com.hnc.Discord', run = ['layout tiling', 'move-node-to-workspace 5'] },
 ]
@@ -48,13 +48,13 @@ on-window-detected = [
 [mode.main.binding]
 
     # App launchers (alt + letter = open app)
-    alt-enter = ['workspace 4', 'exec-and-forget open -a "Ghostty"']
+    alt-enter = ['workspace 1', 'exec-and-forget open -a "Ghostty"']
     alt-b = ['workspace 2', 'exec-and-forget open -a "Google Chrome"']
     alt-c = ['workspace 3', 'exec-and-forget open -b com.openai.codex']
     alt-d = ['workspace 5', 'exec-and-forget open -a "Discord"']
     alt-m = 'exec-and-forget open -a "Mail"'
-    alt-n = 'exec-and-forget open -a "Notion"'
-    alt-t = ['workspace 4', 'exec-and-forget open -a "Ghostty"']
+    alt-n = ['workspace 1', 'exec-and-forget open -na "Ghostty" --args -e /opt/homebrew/bin/tmux new-session /opt/homebrew/bin/nvim']
+    alt-t = ['workspace 1', 'exec-and-forget open -a "Ghostty"']
 
     alt-ctrl-c = 'exec-and-forget open -a "Calendar"'
 

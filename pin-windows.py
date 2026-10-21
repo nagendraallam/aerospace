@@ -7,7 +7,7 @@ import subprocess
 import sys
 
 AERO = '/opt/homebrew/bin/aerospace'
-PINS = {'com.openai.codex': '3', 'com.mitchellh.ghostty': '4',
+PINS = {'com.openai.codex': '3', 'com.mitchellh.ghostty': '1',
         'com.google.Chrome': '2', 'com.apple.finder': '4',
         'com.hnc.Discord': '5'}
 env = {k: v for k, v in os.environ.items() if k not in ('AEROSPACE_WINDOW_ID', 'AEROSPACE_WORKSPACE')}
