@@ -1,0 +1,9 @@
+# Local runtime state
+.pin-windows.lock
+__pycache__/
+
+# Local configuration history
+*.bak-*
+
+# macOS metadata
+.DS_Store
