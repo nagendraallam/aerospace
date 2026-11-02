@@ -1,0 +1,35 @@
+macos-option-as-alt = true
+keybind = cmd+`=toggle_quick_terminal
+
+# Forward macOS save shortcuts as terminal-safe function keys.
+keybind = cmd+s=csi:99~
+keybind = cmd+shift+s=csi:100~
+
+# Forward Cmd + 1..9 so Neovim can jump directly to its buffer tabs.
+keybind = cmd+1=csi:101~
+keybind = cmd+2=csi:102~
+keybind = cmd+3=csi:103~
+keybind = cmd+4=csi:104~
+keybind = cmd+5=csi:105~
+keybind = cmd+6=csi:106~
+keybind = cmd+7=csi:107~
+keybind = cmd+8=csi:108~
+keybind = cmd+9=csi:109~
+
+# Every regular terminal surface attaches to the latest tmux session.
+# If no tmux server/session exists yet, create one.
+command = ~/.config/ghostty/tmux-entrypoint.sh
+
+# Ayu dark palette with warm accents
+theme = Ayu Mirage
+
+# Lightly blurred neutral glass, including tmux and app-painted cells.
+background-opacity = 0.40
+background-blur = 5
+background-opacity-cells = true
+
+# Neutral background removes the Ayu blue tint; keep palette/status colors.
+background = #000000
+
+# Equivalent to nine 1pt increases from the macOS default of 13pt.
+font-size = 22

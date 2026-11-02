@@ -7,3 +7,7 @@ __pycache__/
 
 # macOS metadata
 .DS_Store
+
+# Installer-created backups and local test data
+*.backup-*
+.test-home/

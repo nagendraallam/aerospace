@@ -18,7 +18,7 @@ tell application "System Events"
     display alert "AeroSpace Shortcuts" message "
 WORKSPACES (switch only; never launch apps)
   alt + 1         Ghostty / Neovim
-  alt + 2         Chrome
+  alt + 2         Firefox
   alt + 3         ChatGPT / Codex
   alt + 4         Finder
   alt + 5         Discord
@@ -28,7 +28,7 @@ WORKSPACES (switch only; never launch apps)
 APP LAUNCHERS
   alt + ctrl + c    Calendar
   alt + enter / t    Ghostty + tmux
-  alt + b    Chrome
+  alt + b    Firefox
   alt + n    New tmux + Neovim      alt + m    Mail
   alt + c    Codex   alt + d    Discord
 

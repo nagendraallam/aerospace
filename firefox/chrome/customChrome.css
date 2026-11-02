@@ -1,0 +1,26 @@
+/* Personal WhiteSur tweaks. */
+
+/* Keep the selected tab's fill, but use the same quiet dark horizontal edge
+   as ordinary tabs—no bright frame or raised side shadow. */
+#TabsToolbar .tabbrowser-tab[selected],
+#TabsToolbar .tabbrowser-tab[selected] > .tab-stack,
+#TabsToolbar .tabbrowser-tab[selected] .tab-background,
+#tabbrowser-tabs .tabbrowser-tab[selected],
+#tabbrowser-tabs .tabbrowser-tab[selected] > .tab-stack,
+#tabbrowser-tabs .tabbrowser-tab[selected] .tab-background,
+#vertical-tabs tab[selected],
+#vertical-tabs tab[selected] .tab-stack,
+#vertical-tabs tab[selected] .tab-background {
+  border-color: var(--gnome-toolbar-border-color) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#TabsToolbar .tabbrowser-tab[selected] > .tab-stack > .tab-background,
+#tabbrowser-tabs .tabbrowser-tab[selected] > .tab-stack > .tab-background,
+#vertical-tabs tab[selected] .tab-background {
+  border: 1px solid var(--gnome-toolbar-border-color) !important;
+  border-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
